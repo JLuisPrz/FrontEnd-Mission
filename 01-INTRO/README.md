@@ -1,7 +1,7 @@
 # Practicas de Intro a Frontend
-#### Caso
+### Caso
 Abogabot
-#### Descripción
+### Descripción
 - Es un despacho de abogados que quiere automatizar las demandas de sus clientes, esto lo harán a traves de una página web llenando un formulario.
 - Al momento de llenar el formulario se manda al proceso de pago para finalizar la transacción.
 - Para dar seguimiento a su demanda, el cliente crea una cuenta en la plataforma y verá el seguimiento de cada una de las actualizaciones del proceso legal.
@@ -12,9 +12,9 @@ Abogabot
 - La página debe de ser responsive para poderla ver desde el celular.
 - La preferncia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 
-#### Practicas
-	- [Toma de requerimientos](./1.- Toma de requerimientos.pdf)
-  - [Crea tu buyer persona](./2.- Buyer persona.pdf)
-	- [Publico objetivo](./3.- Público objetivo.pdf)
-	- [Wireframe UX](https://www.figma.com/file/7hXArMMRLpNzMUviLNCb0n/Abogabot?node-id=22%3A71)
-	- [UI](./5.-ui.md)
+### Practicas
+- [Toma de requerimientos](./1.- Toma de requerimientos.pdf)
+- [Crea tu buyer persona](./2.- Buyer persona.pdf)
+- [Publico objetivo](./3.- Público objetivo.pdf)
+- [Wireframe UX](https://www.figma.com/file/7hXArMMRLpNzMUviLNCb0n/Abogabot?node-id=22%3A71)
+- [UI](./5.-ui.md)
