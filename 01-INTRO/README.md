@@ -14,7 +14,7 @@ Abogabot
 
 ### Prácticas
 - [Toma de requerimientos](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/1.-%20Toma%20de%20requerimientos.pdf)
-- [Crea tu buyer persona](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/2.-%20Buyer%20persona.pdf)
-- [Publico objetivo](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/3.-%20P%C3%BAblico%20objetivo.pdf)
+- [Buyer persona](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/2.-%20Buyer%20persona.pdf)
+- [Público objetivo](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/3.-%20P%C3%BAblico%20objetivo.pdf)
 - [Wireframe UX](https://www.figma.com/file/7hXArMMRLpNzMUviLNCb0n/Abogabot?node-id=22%3A71)
 - [UI](https://www.figma.com/file/7hXArMMRLpNzMUviLNCb0n/Abogabot?node-id=72%3A3705)
