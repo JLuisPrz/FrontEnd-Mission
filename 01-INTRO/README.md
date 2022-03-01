@@ -12,7 +12,7 @@ Abogabot
 - La página debe de ser responsive para poderla ver desde el celular.
 - La preferncia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 
-### Practicas
+### Prácticas
 - [Toma de requerimientos](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/1.-%20Toma%20de%20requerimientos.pdf)
 - [Crea tu buyer persona](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/2.-%20Buyer%20persona.pdf)
 - [Publico objetivo](https://github.com/JLuisPrz/FrontEnd-Mission/blob/main/01-INTRO/3.-%20P%C3%BAblico%20objetivo.pdf)
