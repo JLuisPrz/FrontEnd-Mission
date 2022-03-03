@@ -5,46 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pastelería La Espiga Dorada</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://kit.fontawesome.com/65d9af9b85.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body id="inicio">
     <!--Encabezado-->
-    <header>
+    <header id="inicio">
       <img src="./assets/img/logo.svg" alt="Logo" class="centrarLogo" />
       <nav class="menu">
         <ul class="menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Menú</a></li>
-          <li><a href="#">Personalizar</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#personalizar">Personalizar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <!--Contenido-->
-    <section>
-      <img src="./assets/img/banner.svg" alt="banner" class="banner">
-    </section>
-    <section>
-      <h2>Recomendaciones de la semana</h2>
-    </section>
+    <main>
+      <!--Banner-->
+      <section>
+        <img src="./assets/img/banner.svg" alt="banner" class="banner">
+      </section>
+
+      <!--Nosotros-->
+      <section id="nosotros">
+        <h1>Nosotros</h1>
+      </section>
+
+      <!--Menu-->
+      <section id="menu">
+        <h1>Nuestro menú</h1>
+        <div class="listcontainer">
+          <div class="food-card">
+            <div class="item-image">
+              <img src="./assets/img/pastel-chocolate.png" alt="pastel de chocolate" />
+            </div>
+            <div class="item-name">Pastel de Chocolate</div>
+            <div class="item-name">$ 250</div>
+            <button class="boton">Agregar</button> 
+          </div>
+          <div class="food-card">
+            <div class="item-image">
+              <img src="./assets/img/pastel-fresa.png" alt="pastel de fresa" />
+            </div>
+            <div class="item-name">Pastel de Fresa</div>
+            <div class="item-name">$ 250</div>
+            <button class="boton">Agregar</button> 
+          </div>
+          <div class="food-card">
+            <div class="item-image">
+              <img src="./assets/img/pastel-vainilla.png" alt="pastel de vainilla" />
+            </div>
+            <div class="item-name">Pastel de Vainilla</div>
+            <div class="item-name">$ 250</div>
+            <button class="boton">Agregar</button> 
+          </div>
+          <div class="food-card">
+            <div class="item-image">
+              <img src="./assets/img/pastel-cumpleaños.png" alt="pastel de cumpleaños" />
+            </div>
+            <div class="item-name">Pastel de Cumpleaños</div>
+            <div class="item-name">$ 250</div>
+            <button class="boton">Agregar</button> 
+          </div>
+          <div class="food-card">
+            <div class="item-image">
+              <img src="./assets/img/pastel-limon.png" alt="pastel de limon" />
+            </div>
+            <div class="item-name">Pastel de Limón</div>
+            <div class="item-name">$ 250</div>
+            <button class="boton">Agregar</button> 
+          </div>
+          <div class="food-card">
+            <div class="item-image">
+              <img src="./assets/img/pastel-naranja.png" alt="pastel de naranja" />
+            </div>
+            <div class="item-name">Pastel de Naranja</div>
+            <div class="item-name">$ 250</div>
+            <button class="boton">Agregar</button>
+          </div>
+        
+        </div>
+      </section>
+
+      <!--Personalizar-->
+      <section id="personalizar">
+        <h1>Personalizar</h1>
+        <form action="" class="formulario-personalizar">
+          <h2>Personaliza tu pastel</h2>
+          <div class="personalizado">
+            <div>
+              <h3>Sabor del pan</h3>
+              <table style="border: 1px solid #000;">
+                <tr>
+                  <th colspan="3">Sabores</th>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkChocolate" value="chocolate">Pan de chocolate</label></td>
+                  <td>............</td>
+                  <td>$300</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkFresa" value="fresa">Pan de fresa</label></td>
+                  <td>............</td>
+                  <td>$210</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkVainilla" value="vainilla">Pan de vainilla</label></td>
+                  <td>............</td>
+                  <td>$230</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkLimon" value="limon">Pan de limón</label></td>
+                  <td>............</td>
+                  <td>$200</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkNaranja" value="naranja">Pan de naranja</label></td>
+                  <td>............</td>
+                  <td>$250</td>
+                </tr>
+
+              </table>
+            </div>
+            <div>
+              <h3>Tipo de relleno</h3>
+              <label><input type="checkbox" id="checkMermelada" value="mermelada">Mermelada</label><br>
+              <label><input type="checkbox" id="checkCremaChocolate" value="cremaChocolate">Crema de chocolate</label><br>  
+              <label><input type="checkbox" id="checkCremaBatir" value="cremaBatir">Crema para batir</label><br>
+            </div>
+            <div>
+              <h3>Decoraciones</h3>
+              <label><input type="checkbox" id="checkMermelada" value="mermelada">Caramelo suave</label><br>
+              <label><input type="checkbox" id="checkMermelada" value="mermelada">Frutas</label><br>
+              <label><input type="checkbox" id="checkMermelada" value="mermelada">Fondant</label><br>
+              <label><input type="checkbox" id="checkMermelada" value="mermelada">Chantilly</label><br>
+              <label><input type="checkbox" id="checkMermelada" value="mermelada">Merengue</label><br>
+            </div>
+          </div>
+          <div>
+            <h3>Datos personales</h3>
+          </div>
+        </form>
+      </section>
+  </main>
  
     <!--Pie de página-->
     <footer class="footer">
       <div class="social">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
       </div>
       <p class="copyright">Copyright &copy; 2022 La Espiga Dorada</p>
-      <p class="copyright">Creado por José Luis</p>  
+      <p class="copyright">Diseñado por José Luis</p>  
     </footer>
   </body>
 </html>

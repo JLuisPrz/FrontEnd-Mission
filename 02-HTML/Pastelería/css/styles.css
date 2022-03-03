@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     padding: 0;
     margin: 0;
     background-color: #EDEBD7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .centrarLogo{
     margin: -40px auto;
@@ -78,3 +79,116 @@
       margin: auto;
       border-radius: 5px;
   }
+
+  /*Menu Pasteles*/
+  .tabs{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tabs label{
+    order: 1;/*Poner las etiquetas primero*/
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #EDEBD7;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    border-radius: 0.5rem;
+  }
+  .tabs .tab{
+    order: 99;/*Poner a los tabs al final*/
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background-color: #C37D92;
+  }
+  .tabs input[type="radio"]{
+    display: none;
+  }
+  .tabs input[type="radio"]:checked + label{
+    background: #C48321;
+  }
+  .tabs input[type="radio"]:checked + label + .tab{
+    display: block;
+  }
+
+/*Cards de los productos*/
+.listcontainer{
+ 
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  
+}
+.food-card{
+  position: relative;
+  margin: 30px;
+  background-color: #B6752E;
+  width: 250px;
+  height: 350px;
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: 14px 18px 48px -7px #4d4d4dbe;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+}
+.item-image{
+  background-color: #B6752E;
+}
+.item-image img{
+  height: 220px;
+  background-color: #B6752E;
+  display: block;
+  margin: auto;
+}
+
+.item-name{
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  background-color: #B6752E;
+  color: #EDEBD7;
+}
+
+section h1{
+  color: #4A2A2D;
+  text-align: center;
+  margin: 60px;
+  font-weight: bold;
+}
+.boton{
+  position: absolute;
+  margin: auto;
+  width: 60%;
+  top: 80%;
+  left: 20%;
+  background-color: #4A2A2D;
+  color: #EDEBD7;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.boton:hover{
+  background-color: #EDEBD7;
+  color: #4A2A2D;
+}
+
+/*Personalizar*/
+.formulario-personalizar{
+  border: 1px solid #4A2A2D;
+  border-radius: 25px;
+  margin: 10px 40px 10px;
+  padding: 10px 30px 10px;
+}
+.personalizado{
+  display: flex;
+  justify-content: space-between;
+}
