@@ -34,84 +34,31 @@
 }
 .menu li a:hover{
     color: #C48321;
+    text-decoration: underline;
 }
 
-/*Estilos footer*/
-.footer {
-    padding: 15px 0;
-    background-color: #4a2a2d;
-  }
-  .footer .social {
-    background-color: #4a2a2d;
-    text-align: center;
-    padding-bottom: 20px;
-    color: #4a2a2d;
-  }
-  .footer .social a {
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid #EDEBD7;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-  }
-  .footer .social a:hover {
-    opacity: 0.9;
-  }
-  .footer .copyright {
-    background-color: #4a2a2d;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #EDEBD7;
-  }
+/*Nosotros*/
+.nosotros{
+  color: #4A2A2D;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 30px 70px 30px;
+  text-align: justify;
+}
+.nosotros img{
+  margin: 0px 0px 0px 40px;
+  border-radius: 10px;
+  height: 500px;
+}
   
-  /*Banner*/
-  .banner{
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
-      border-radius: 5px;
-  }
-
-  /*Menu Pasteles*/
-  .tabs{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tabs label{
-    order: 1;/*Poner las etiquetas primero*/
-    display: block;
-    padding: 1rem 2rem;
-    margin-right: 0.2rem;
-    cursor: pointer;
-    background: #EDEBD7;
-    font-weight: bold;
-    transition: background ease 0.2s;
-    border-radius: 0.5rem;
-  }
-  .tabs .tab{
-    order: 99;/*Poner a los tabs al final*/
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    padding: 1rem;
-    background-color: #C37D92;
-  }
-  .tabs input[type="radio"]{
-    display: none;
-  }
-  .tabs input[type="radio"]:checked + label{
-    background: #C48321;
-  }
-  .tabs input[type="radio"]:checked + label + .tab{
-    display: block;
+/*Banner*/
+.banner{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
   }
 
 /*Cards de los productos*/
@@ -157,7 +104,7 @@
 section h1{
   color: #4A2A2D;
   text-align: center;
-  margin: 60px;
+  margin: 100px 10px 20px;
   font-weight: bold;
 }
 .boton{
@@ -179,16 +126,158 @@ section h1{
 .boton:hover{
   background-color: #EDEBD7;
   color: #4A2A2D;
+  border: 1px solid #4A2A2D;
 }
 
 /*Personalizar*/
 .formulario-personalizar{
-  border: 1px solid #4A2A2D;
+  border: 1.5px solid #4A2A2D;
   border-radius: 25px;
-  margin: 10px 40px 10px;
-  padding: 10px 30px 10px;
+  margin: 5px 40px 30px;
+  padding: 10px 30px 50px;
 }
 .personalizado{
   display: flex;
-  justify-content: space-between;
+  flex-flow: wrap;
+  justify-content: center;
+  background-color: #EDEBD7;
+}
+.personalizado table{
+  width: 350px;
+  padding: 30px;
+  border: 1px dotted #4A2A2D;
+  color: #4A2A2D;
+  border-radius: 15px;
+  margin: 20px;
+}
+.formulario-personalizar h3{
+  color: #4A2A2D;
+  text-align: center;
+  margin: 10px auto 30px;
+}
+.descripcion{
+  color: #4A2A2D;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.descripcion textarea{
+  padding: 5px;
+  border-radius: 8px;
+}
+.botonFormulario{
+  position: relative;
+  margin-bottom: 50px;
+}
+.datosPersonales{
+  color: #4A2A2D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  border-radius: 20px;
+  border: 1px dotted #4A2A2D;
+  padding: 20px;  
+}
+.datosPersonales input{
+  width: 450px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+/*Pastelero*/
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+.tabs label{
+  order: 1;/*Poner las etiquetas primero*/
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #EDEBD7;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  border-radius: 0.5rem;
+  color: #4A2A2D;
+}
+.tabs .tab{
+  order: 99;/*Poner a los tabs al final*/
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background-color: #EDEBD7;
+}
+.tabs input[type="radio"]{
+  display: none;
+}
+.tabs input[type="radio"]:checked + label{
+  background: #C48321;
+  color: #EDEBD7;
+}
+.tabs input[type="radio"]:checked + label + .tab{
+  display: block;
+}
+
+.tab table{
+  border: 1px dotted #4A2A2D;
+  width: 100%;
+  text-align: center;
+  color: #4A2A2D;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.tab th{
+  padding: 10px;
+  background-color: #4a2a2dd5;
+  color: #EDEBD7;
+}
+.tab td{
+  background-color: #b6742e28;
+  padding: 20px 10px;
+}
+.tab.inventario{
+  width: 30%;
+}
+
+/*Estilos footer*/
+.footer {
+  padding: 15px 0;
+  background-color: #4a2a2d;
+}
+.footer .social {
+  background-color: #4a2a2d;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #4a2a2d;
+}
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #EDEBD7;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+.footer .social a:hover {
+  opacity: 0.9;
+}
+.footer .copyright {
+  background-color: #4a2a2d;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #EDEBD7;
 }

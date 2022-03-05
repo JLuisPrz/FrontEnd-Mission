@@ -18,7 +18,7 @@
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#menu">Menú</a></li>
           <li><a href="#personalizar">Personalizar</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="./pastelero.html">Pastelero</a></li>
         </ul>
       </nav>
     </header>
@@ -26,12 +26,26 @@
     <main>
       <!--Banner-->
       <section>
-        <img src="./assets/img/banner.svg" alt="banner" class="banner">
+       <img src="./assets/img/banner.png" alt="banner" class="banner">
       </section>
 
       <!--Nosotros-->
       <section id="nosotros">
         <h1>Nosotros</h1>
+        <div class="nosotros">
+          <p>
+            Pastelería La Espiga Dorada nace en Noviembre de 2010 y abre su primera sucursal en San Isidro Buensuceso,
+            San Pablo del Monte, Tlaxcala. Gracias a la gran aceptación 
+            obtenida desde nuestros inicios, hoy contamos con 2 sucursales distribuidas estratégicamente 
+            en San Pablo del Monte y en su área metropolitana.
+            En la actualidad, contamos con 2 modernas plantas de manufactura en operación. Gracias a 
+            esto, somos capaces de elaborar e innovar los mejores panes y pasteles del mercado, 
+            manteniendo para nuestra clientela la más alta calidad y el mejor precio día a día durante 
+            estos primeros 12 años de servicio.
+          </p>
+          <img src="./assets/img/nosotros.png" alt="pasteleria">
+        </div>
+
       </section>
 
       <!--Menu-->
@@ -94,36 +108,35 @@
       <section id="personalizar">
         <h1>Personalizar</h1>
         <form action="" class="formulario-personalizar">
-          <h2>Personaliza tu pastel</h2>
+          <h3>Personaliza tu pastel</h3>
           <div class="personalizado">
             <div>
-              <h3>Sabor del pan</h3>
-              <table style="border: 1px solid #000;">
+              <table>
                 <tr>
                   <th colspan="3">Sabores</th>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" id="checkChocolate" value="chocolate">Pan de chocolate</label></td>
+                  <td><label><input type="checkbox" id="checkChocolate" value="chocolate"> Pan de chocolate</label></td>
                   <td>............</td>
                   <td>$300</td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" id="checkFresa" value="fresa">Pan de fresa</label></td>
+                  <td><label><input type="checkbox" id="checkFresa" value="fresa"> Pan de fresa</label></td>
                   <td>............</td>
                   <td>$210</td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" id="checkVainilla" value="vainilla">Pan de vainilla</label></td>
+                  <td><label><input type="checkbox" id="checkVainilla" value="vainilla"> Pan de vainilla</label></td>
                   <td>............</td>
                   <td>$230</td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" id="checkLimon" value="limon">Pan de limón</label></td>
+                  <td><label><input type="checkbox" id="checkLimon" value="limon"> Pan de limón</label></td>
                   <td>............</td>
                   <td>$200</td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" id="checkNaranja" value="naranja">Pan de naranja</label></td>
+                  <td><label><input type="checkbox" id="checkNaranja" value="naranja"> Pan de naranja</label></td>
                   <td>............</td>
                   <td>$250</td>
                 </tr>
@@ -131,26 +144,93 @@
               </table>
             </div>
             <div>
-              <h3>Tipo de relleno</h3>
-              <label><input type="checkbox" id="checkMermelada" value="mermelada">Mermelada</label><br>
-              <label><input type="checkbox" id="checkCremaChocolate" value="cremaChocolate">Crema de chocolate</label><br>  
-              <label><input type="checkbox" id="checkCremaBatir" value="cremaBatir">Crema para batir</label><br>
+              <table>
+                <tr>
+                  <th colspan="3">Tipo de relleno</th>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkMermelada" value="mermelada"> Mermelada</label></td>
+                  <td>............</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkCremaChocolate" value="cremaChocolate"> Crema de chocolate</label></td>
+                  <td>............</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkCremaBatir" value="cremaBatir"> Crema para batir</label></td>
+                  <td>............</td>
+                  <td>$100</td>
+                </tr>
+              </table>
             </div>
             <div>
-              <h3>Decoraciones</h3>
-              <label><input type="checkbox" id="checkMermelada" value="mermelada">Caramelo suave</label><br>
-              <label><input type="checkbox" id="checkMermelada" value="mermelada">Frutas</label><br>
-              <label><input type="checkbox" id="checkMermelada" value="mermelada">Fondant</label><br>
-              <label><input type="checkbox" id="checkMermelada" value="mermelada">Chantilly</label><br>
-              <label><input type="checkbox" id="checkMermelada" value="mermelada">Merengue</label><br>
+              <table>
+                <tr>
+                  <th colspan="3">Decoraciones</th>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkMermelada" value="mermelada"> Caramelo suave</label></td>
+                  <td>............</td>
+                  <td>$110</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkMermelada" value="mermelada"> Frutas</label></td>
+                  <td>............</td>
+                  <td>$110</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkMermelada" value="mermelada"> Fondant</label></td>
+                  <td>............</td>
+                  <td>$110</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkMermelada" value="mermelada"> Chantilly</label></td>
+                  <td>............</td>
+                  <td>$110</td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" id="checkMermelada" value="mermelada"> Merengue</label></td>
+                  <td>............</td>
+                  <td>$110</td>
+                </tr>
+              </table>
+            </div>
+          </div> 
+          <div class="descripcion">
+            <div>
+              <label for="descripcion">Describe como quieres que sea tu pastel</label><br>
+              <textarea name="" id="" cols="100" rows="7" placeholder="Describe tu pastel"></textarea> 
             </div>
           </div>
-          <div>
+          <div class="datosPersonales">
             <h3>Datos personales</h3>
+            <div>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+            </div>
+            <div>
+            <label for="telefono">Teléfono</label><br>
+            <input type="text" name="telefono" id="telefono" placeholder="Teléfono"><br>
+            </div>
+            <div>
+            <label for="correo">Correo electrónico</label><br>
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico"><br>
+            </div>  
+            <div>
+            <label for="domicilio">Domicilio</label><br>
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </div>
           </div>
-        </form>
+          <div class="botonFormulario">
+            <button class="boton">Agregar</button>  
+          </div>
+        </form>       
       </section>
   </main>
+  
+
  
     <!--Pie de página-->
     <footer class="footer">
