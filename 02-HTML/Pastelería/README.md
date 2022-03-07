@@ -2,9 +2,9 @@
 ## **Caso: Pastelería**
 <br>
 Descripción:<br>
-* El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.
-* El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.
-* El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.
+*El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.
+*El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.
+*El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.
 * El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.
 * El cliente de la pastelería necesita poner en un formulario su pedido.
 * El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos.
