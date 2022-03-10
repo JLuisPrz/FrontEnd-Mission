@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+/*Navigation bar*/
+nav{
+    width: 100%;
+    margin-top: 10px;
+}
+.logo{
+    color: #2949C7;
+    font-size: 2vw;
+    line-height: 80px;
+    font-weight: 900;
+    padding: 0 6.25vw;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #6D7B93;
+    font-size: 1.2vw;
+    padding: 7px 17px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    background-color: #3050CE;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #4b4b4b;
+}
+.check-btn{
+    color: #000;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .check-btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #2C3E50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background-color: none;
+        color: #0082E6;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+}
+
+
+/*Section 1*/
+.section1{
+    position: relative;
+    margin-left: 6.25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.infoSection1{
+    width: 50%;
+}
+.infoSection1 h1{
+    color: #1F3E72;
+    font-size: 3.5vw;
+    margin-top: 4.5vw;
+    font-weight: 900;
+}
+.section1 img{
+    width: 43vw;
+    height: 50vw;
+}
+.schedule{
+    position: absolute;
+    width: 76%;
+    height: 17%;
+    z-index: 100;
+    background-color: #fafcfee7;
+    margin-top: 43%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2vw;
+    box-shadow: 2px 2px 2px #cccccc;
+}
+.schedule label{
+    color: #1F3E72;
+    font-weight: bold;
+}
+.schedule i{
+    background-color: #dbe8ff;
+    color: #2F4FCD;
+    padding: 4px;
+    border-radius: 3px;
+}
+.schedule p{
+    display: inline-block;
+    color: #6D7B93;
+}
+.schedule button{
+    border: none;
+    background-color: #2A4AC8;
+    color: #FFF;
+    padding: 1vw 2.8vw;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #4b4b4b;
+    cursor: pointer;
+}
+.bodySection1{
+    margin-top: 40px;
+    font-size: 1.1vw;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #3B5683;
+}
+.bodySection1 i{
+    color: #FFD012;
+    background-color: #FFFAE7;
+    padding: 4px;
+    border-radius: 3px;
+}
+.titleSchedule{
+    margin-top: 10vw;
+    font-size: 1.2vw;
+    color: #1F3E72;
+    font-weight: bold;   
+}
+.titleSchedule i{
+    background-color: #dbe8ff;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+/*Vacunas*/
+.vacunas{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.vacunas img{
+    width: 14vw;
+    height: 8vw;
+    margin: 1vw 4vw;
+    opacity: 0.2;
+}
+
+/*Section 2*/
+.section2{
+    margin-left: 6.25vw;
+    margin-top: 6vw;
+    margin-right: 6.25vw;
+
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+.card p{
+    font-size: 0.8vw;
+    line-height: 1.3vw;
+}
+.card label{
+    font-size: 1.2vw;
+    font-weight: bolder ;
+    color: #1F3E72;
+}
+.card i{
+    color: #2F4FCD;
+    background-color: #DBE8FF;
+    padding: 0.5vw;
+    border-radius: 3px;
+    margin-bottom: 2vw;
+    font-size: 1.6vw;
+}
+.cardBorder{
+    border: 1px solid #6868681f;
+    width: 18vw;
+    border-radius: 5px;
+    margin: 0 2vw;
+    cursor: pointer;
+    padding: 1vw;
+}
+.cardShadow:hover{
+    transform: scale(1.1);
+    box-shadow: 2px -1px 17px 2px #c7dcff;
+    transition: 0.6s;
+}
+
+/*Section 3*/
+.section3{
+    margin-top: 10vw;
+    margin-right: 6.25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imgSection3 img{
+    width: 45vw;
+    height: 57vw;
+}
+.bodySection3{
+    width: 44%;
+}
+.bodySection3 h1{
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+.titulo{
+    color: #1F3E72;
+    font-size: 2.2vw;
+}
+.parrafo{
+    color: #6d7b93;
+    font-size: 1vw;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    line-height: 1.5vw;
+    margin-top: 2vw;
+    line-height: 1.8vw;
+}
+.listSection3{
+    margin-top: 6vw;
+}
+.cardHorizontal{
+    width: 28vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4vw;
+}
+.cardHorizontal i{
+    background-color: #dbe8ff;
+    color: #2F4FCD;
+    padding: 0.3vw;
+    border-radius: 0.3vw;
+}
+.cardHorizontal h4{
+    color: #1F3E72;
+    text-align: left;
+    font-size: 1.1vw;
+}
+
+/*Section 4*/
+.section4{
+    margin-top: 10vw;
+    margin-left: 6.25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardsContact{
+    margin-top: 13vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardsContact div{
+    width: 47%;
+    height: 14vw;
+    border: 1px solid #6868681f;
+    border-radius: 5px;
+    margin: 1vw 0.5vw;
+    padding: 1vw;
+    cursor: pointer;
+    position: relative;
+    box-shadow: -1px 15px 14px -16px #4865d3a1;
+}
+.cardsContact p{
+    margin-top: -1vw;
+    color: #6d7b93;
+    font-size: 0.9vw;
+    letter-spacing: 0.8px;
+}   
+.cardsContact button{
+    position: absolute;
+    border: none;
+    background-color: #e7eeff;
+    color: #4865D3;
+    padding: 1vw 2.8vw;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 10%;
+}
+.cardsContact button:hover{
+    background-color: #4865D3;
+    color: #FFF;
+    box-shadow: -1px 15px 14px -9px #4865D3;
+}
+
+
+/*Footer*/
+#footer{
+    background-color: #EEF3FF;
+    width: 100%;
+    margin-top: 8vw;
+    padding:  3vw 6.25vw 0vw 6.25vw;
+    
+}
+.footer{
+    width: 100%;
+    background-color: #EEF3FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.goal{
+    width: 50%;
+}
+.goal label{
+    color: #2949C7;
+    font-size: 2vw;
+    font-weight: 900;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+}
+.contact div{
+    width: 11vw;
+}
+.contact label{
+    color: #1F3E72;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+.contact p{
+    color: #6d7b93;
+    font-size: 1vw;
+    margin-top: 1.9vw;
+    line-height: 1vw;
+}
+.copy{
+    padding: 6vw 0 1.5vw 0;
+    
+}
