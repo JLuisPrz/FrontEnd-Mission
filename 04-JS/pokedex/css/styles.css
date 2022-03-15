@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-container{
+    margin-top:0;
+    margin-bottom: 0;
+    left: 0;
+    right:auto;
+}
+.body-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.size-container{
+    width: 20%;
+}
+.pkm-img-container{
+    width: 55%;
+}
+.pkm-img-container img{
+    width: 20vw;
+    height: 30vw;
+    display: block;
+    margin: auto;
+}
+.stats-container{
+    width: 25%;
+}

@@ -4,19 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
+    <title>Pokédex</title>
     <!--CSS-->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-      <h1>Pokedex</h1>
-      <input type="text" name="pokeName" id="pokeName" placeholder="Nombre del pokemon">
-      <img src="./img/pokeball.png" alt="pokemon" id="pokeImg" width="200">
-      <button onclick="fetchPokemon()">Cambiar pokemon</button>
+    <h1>Pokédex</h1>
+  
+    <div class="name-container">
+      <h2 id="poke-id">ID</h2>
+      <h1 id="poke-name">Nombre</h1>
+    </div>
+    
+    <div class="body-container">
+      <!--Peso y altura-->
+      <div class="size-container">
+        <label>Altura: </label><span id="poke-height"></span><br>
+        <label>Peso: </label><span id="poke-weight"></span>
+      </div>
+      <!--Imagen-->
+      <div class="pkm-img-container">
+        <img src="./img/pokeball.png" alt="pokemon" id="poke-img">
+      </div>
+      <!--Estadisticas-->
+      <div class="stats-container">
+        <div>
+          <ul>
+            <li class="item-stats">
+              <span class="item-stats-pill">HP:
+                <span id="hp-stat">00</span>
+              </span>
+            </li>
+            <li class="item-stats">
+              <span class="item-stats-pill">Attack:
+                <span id="attack-stat">00</span>
+              </span>
+            </li>
+            <li class="item-stats">
+              <span class="item-stats-pill">Defense:
+                <span id="defense-stat">00</span>
+              </span>
+            </li>
+            <li class="item-stats">
+              <span class="item-stats-pill">Sp. Attack: 
+                <span id="sp-attack-stat">00</span>
+              </span>
+            </li>
+            <li class="item-stats">
+              <span class="item-stats-pill">Sp. Defense: 
+                <span id="sp-defense-stat">00</span>
+              </span>
+            </li>
+            <li class="item-stats">
+              <span class="item-stats-pill">Speed: 
+                <span id="speed-stat">00</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <div>
+      <input type="text" name="poke-input" id="poke-input" placeholder="Nombre del pokemon">
+      <button onclick="fetchPokemon()">Buscar</button>
+    </div>
   </body>
   <footer>
-      <!--JS-->
+    <!--JS-->
     <script src="./js/pokedex.js"></script>
   </footer>
 </html>
