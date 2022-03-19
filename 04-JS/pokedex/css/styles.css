@@ -1,33 +1,334 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-body{
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800");
+
+.background {
+  background-color: #56adff;
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100vh;
 }
 
-.name-container{
-    margin-top:0;
-    margin-bottom: 0;
-    left: 0;
-    right:auto;
+@media (max-width: 1024px) {
+  .first-column,
+  .second-column,
+  .third-column {
+    height: auto !important;
+  }
+  body {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
 }
-.body-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
+.container-height {
+  height: 100%;
 }
-.size-container{
-    width: 20%;
+
+.row {
+  height: 100%;
 }
-.pkm-img-container{
-    width: 55%;
+
+.name-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  left: 0;
+  right: auto;
 }
-.pkm-img-container img{
-    width: 20vw;
-    height: 30vw;
-    display: block;
-    margin: auto;
+
+.size-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: 60px;
+  padding-top: 50px;
 }
-.stats-container{
-    width: 25%;
+
+#pkm-number {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+#pkm-name {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+.size-container span {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .size-container {
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+  .name-container {
+    margin-top: 0;
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .name-container {
+    padding-top: 0%;
+  }
+}
+
+#pkm-height {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+#pkm-weight {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+#region-word {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transform: rotate(-90deg) translateY(20px) translateX(30px);
+  transform-origin: 0 100%;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+#pkm-region {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+.size-container > span {
+  display: block;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.452);
+}
+
+#pokemon-image {
+  max-width: 400px;
+  height: auto;
+}
+
+.pkm-img-position {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pkm-img-container {
+  position: relative;
+  transition: background 0.3s ease-in-out;
+  background: transparent !important;
+}
+
+@media (max-width: 1024px) {
+  #pokemon-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .pkm-img-position {
+    justify-content: flex-end;
+  }
+  .container-characteristics {
+    margin-top: 40px;
+  }
+}
+
+.container-stats ul {
+  list-style: none;
+  margin: 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+li.item-stats .item-stats-pill {
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-top: 0;
+  margin-bottom: 14px;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.15);
+}
+
+li.item-stats {
+  display: inline-block;
+}
+
+.container-stats ul::before {
+  content: "";
+  display: block;
+  width: 4px;
+  top: 0;
+  right: auto;
+  bottom: 10px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.35);
+  position: absolute;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .container-stats ul::before {
+    display: none;
+  }
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.container-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-type img {
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  border-radius: 50%;
+  box-shadow: 0 20px 25px -10px rgb(0, 0, 0);
+  margin: 0 15px 15px 0;
+}
+
+@media (max-width: 768px) {
+  input.input-resizing {
+    max-width: 200px;
+  }
+  .btn.sidebar-right {
+    width: 38px;
+  }
+}
+
+input.input-resizing,
+button.button-go {
+  opacity: 0.7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.buttons div {
+  margin: 10px;
+}
+.buttons button {
+  border-radius: 5px;
+  width: 100px;
+}
+.buttons input {
+  border-radius: 5px;
+}
+
+.hide{
+    background: #999999;
+}
+
+.normal {
+  background: #babaae;
+}
+
+.fighting {
+  background: #a75543;
+}
+
+.flying {
+  background: #78a2ff;
+}
+
+.poison {
+  background: #a95ca0;
+}
+
+.ground {
+  background: #cf793a;
+}
+
+.rock {
+  background: #ccbd72;
+}
+
+.bug {
+  background: #c2d21e;
+}
+
+.ghost {
+  background: #8274d9;
+}
+
+.steel {
+  background: #c4c2db;
+}
+
+.fire {
+  background: #fa5643;
+}
+
+.water {
+  background: #56adff;
+}
+
+.grass {
+  background: #8cd750;
+}
+
+.electric {
+  background: #f8cc3b;
+}
+
+.psychic {
+  background: #fa65b4;
+}
+
+.ice {
+  background: #96f1ff;
+}
+
+.dragon {
+  background: #8673ff;
+}
+
+.dark {
+  background: #4b485d;
+}
+.fairy {
+  background: #f9aeff;
 }
