@@ -241,9 +241,8 @@ h3 {
     .row{
         height: 40% !important;
     }
-    #pokemon-image{
-        width: 100%;
-        height: 110%;
+    .container-characteristics{
+        margin-bottom: 40px;
     }
 }
 
