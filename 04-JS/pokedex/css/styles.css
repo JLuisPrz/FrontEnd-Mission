@@ -241,8 +241,11 @@ h3 {
     .row{
         height: 40% !important;
     }
-    .container-characteristics{
+    .container-characteristics {
         margin-bottom: 100px;
+    }
+    .buttons{
+        margin-top: 30px;
     }
 }
 
@@ -251,7 +254,7 @@ button.button-go {
   opacity: 0.7;
 }
 
-.buttons {
+.buttons div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
