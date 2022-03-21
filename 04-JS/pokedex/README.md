@@ -1,6 +1,6 @@
 # Pokédex
 Proyecto realizado para Launch X
-# Capturas de pantalla
+## Capturas de pantalla
 **Vista página web completa**
 <img src="">
 <hr>
