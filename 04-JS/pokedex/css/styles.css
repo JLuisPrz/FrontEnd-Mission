@@ -261,10 +261,12 @@ button.button-go {
 }
 .buttons button {
   border-radius: 5px;
-  width: 100px;
+  width: 150px;
+  height: 30px;
 }
 .buttons input {
   border-radius: 5px;
+  margin: 0 10px 10px 0;
 }
 
 .hide{
@@ -341,3 +343,4 @@ button.button-go {
 .fairy {
   background: #f9aeff;
 }
+
