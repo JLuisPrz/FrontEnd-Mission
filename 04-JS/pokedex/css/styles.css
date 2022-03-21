@@ -258,6 +258,7 @@ button.button-go {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 10vh;
 }
 .buttons button {
   border-radius: 5px;
@@ -338,9 +339,22 @@ button.button-go {
 }
 
 .dark {
-  background: #4b485d;
+  background: #313131;
 }
 .fairy {
   background: #f9aeff;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  height: 10vh;
+  background-color: #4b485d1e;
+  border-radius: 30px;
+  text-align: center;
+  color: #FFF;
+}
+.footer i{
+  color: #000;
+}
